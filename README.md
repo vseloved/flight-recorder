@@ -52,8 +52,11 @@ The service appends each incoming request to the text file in markdown format:
 `~/.frlog.md`.
 
 The API is just a single endpoint - `/frlog` that accepts GET and POST requests.
-The parameters are: `text` is the content (url-encoded, for sure) of the record
-that can, alternatively, be sent in the POST request's body (more robust).
+The parameters are:
+
+- `text` is the content (url-encoded, for sure) of the record
+  that can, alternatively, be sent in the POST request's body (more robust)
+
 Optional query parameters are:
 
 - `title` - used to specify that this is a new record: for console-based
