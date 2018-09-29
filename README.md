@@ -1,4 +1,4 @@
-# flight-recorder
+# flight-recorder (frlog) - a robust REPL logging facility
 
 ![frlog logo](frlogo.png)
 
