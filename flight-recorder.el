@@ -26,7 +26,7 @@
                (string-trim (buffer-string))))
   (when (not (string-empty-p text))
     (let ((url-request-method "POST")
-          (url-request-data text))
+          (url-request-data (encode-coding-string text 'utf-8)))
       (url-retrieve (concat "http://localhost:"
                             *frlog-port*
                             "/frlog?title="
